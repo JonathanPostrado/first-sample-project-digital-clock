@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container main-header-inner">
+            <p class = "greetings"></p>
+            <p class = "sub-greetings">The time is:</p>
+            <div class="clock" id="clock" onload="generateTime()" time-format="12">
+                <h1>00 : 00 : 00</h1>
+            </div>
+            <div class="clock-color">
+                <div class="color-header">
+                    <h3>Change Clock Color:</h3>
+                </div> 
+                <div class="color-inner">
+                    <button class="btn-default" id="default">Default</button>
+                </div>
+                <div class="color-inner">
+                    <button class="btn-color-cyan" id="cyan">Cyan</button>
+                </div>
+                <div class="color-inner">
+                    <button class="btn-color-lightcoral" id="lightcoral">Light Coral</button>
+                </div>  
+                <div class="color-inner">
+                    <button class="btn-color-orchid" id="orchid">Orchid</button>
+                </div>
+            </div>
+            <div class="time-format">
+                <div class="color-header">
+                    <h3>Time Format:</h3>
+                </div> 
+                <div class="format-inner">
+                    <button class="btn-time-format a" id="12hr" time-format="12">12 Hour Format</button>
+                </div>
+                <div class="format-inner">
+                    <button class="btn-time-format a" id="24hr" time-format="24">24 Hour Format</button>
+                </div>
+                <p class="timeformat-display"></p><br>
+            </div>
+            <div class="timezones">
+                <div class="color-header">
+                    <h3>Timezones:</h3>
+                </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">Select Country to display Timezone</button>
+                    <div class="dropdown-content">
+                    <a href="#">Philippines (Default)</a>
+                    <a href="#">United States Of America</a>
+                    <a href="#">Germany</a>
+                    <a href="#">India</a>
+                    </div>
+                </div>
+            </div>  
+            <p class="copyright">Copyright &#169; 2021 Jonathan Postrado</p>
+        </div>
+        
+    </header>
+
+</body>
+<script src="js/clock.js"></script>
+</html>
