@@ -21,11 +21,11 @@ function generateTime(){
     
     } else if (hour < 18) {
         document.body.style.background = "url('images/sample_noon.jpg') no-repeat center center";
-        greet.innerHTML = `<p>Good Afternoon! `+ person +`<br>The time is:</p>`
+        greet.innerHTML = `<p>Good Afternoon! `+ person +`</p>`
     
     } else {
         document.body.style.background = "url('images/sample_evening.jpg') no-repeat center center";
-        greet.innerHTML = `<p>Good Evening! `+ person +`<br> The time is:</p>`
+        greet.innerHTML = `<p>Good Evening! `+ person +`</p>`
     }
 
     //for displaying selected time format

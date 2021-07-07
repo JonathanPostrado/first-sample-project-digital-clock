@@ -181,3 +181,50 @@ body{
 .copyright{
     margin-top: 100px;
 }
+
+
+/* Media Queries starts here */
+
+@media screen and (max-width: 600px) {
+    .greetings{
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+    .sub-greetings{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    .clock h1{
+        font-size: 3.5rem;
+        margin-top: 60px;
+    }
+    .btn-default{
+        padding: 15px 15px;
+    }
+    .btn-color-cyan{
+        padding: 15px 15px;
+    }
+    .btn-color-lightcoral{
+        padding: 15px 15px;
+    }
+    .btn-color-orchid{
+        padding: 15px 15px;
+    }
+    .a{
+        padding: 15px 13px;
+    }
+    .clock-color{
+        margin-top: 100px;
+    }
+    .copyright{
+        font-size: 0.8rem;
+    }
+    .timeformat-display{
+        font-size: 0.9rem;
+    }
+    .color-header{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {}
