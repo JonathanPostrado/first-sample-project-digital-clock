@@ -15,6 +15,7 @@ function generateTime(){
     var  sec = date.getSeconds();
     var ampm = (hour >= 12) ? "PM" : "AM";
 
+    //condition to change background depends on time
     if (hour < 12) {
         document.body.style.background = "url('images/sample_morning.jpg') no-repeat center center";
         greet.innerHTML = `<p>Good Morning! `+ person +`</p>`
@@ -36,8 +37,6 @@ function generateTime(){
         displayFormat.innerHTML = `<p>Note: This is 24 hour Time Format</p>`
     }
     
-
-
     //Display Format
     hour = (hour < 10) ? "0" + hour : hour;
     mins = (mins < 10) ? "0" + mins : mins;
